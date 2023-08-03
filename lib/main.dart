@@ -3,16 +3,14 @@ import 'package:get/get.dart';
 import 'package:rento/helpers/route_helper.dart';
 import 'package:rento/helpers/theme_helper.dart';
 
-// git amend problem solving
-// https://stackoverflow.com/questions/253055/how-do-i-push-amended-commit-to-the-remote-git-repository
-
 void main() {
   return runApp(
     GetMaterialApp(
+      // showPerformanceOverlay: true,
       theme: ThemeHelper.getTheme(false),
       debugShowCheckedModeBanner: false,
-      unknownRoute: RouteHelper.notFound,
-      initialRoute: RouteHelper.TEST,
+      unknownRoute: RouteHelper.error,
+      initialRoute: RouteHelper.ROOM,
       getPages: RouteHelper.routes,
     ),
   );
