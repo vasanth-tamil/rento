@@ -30,6 +30,10 @@ flutter_launcher_icons:
   android: "launcher_icon"
   image_path: "assets/logo/logo.png"
 
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: "assets/logo/launcher_icon.png"
+
 flutter:
   uses-material-design: true
 
